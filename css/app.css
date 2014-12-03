@@ -460,15 +460,15 @@ form.signup button.btn {
 }
 
 .section-title {
-	margin: 0 0 20px;
+	margin: 0 0 10px;
 	text-align: center;
 }
 
 .section-title-border {
-	width: 70px;
+	width: 210px;
 	height: 3px;
 	background: rgba(0,0,0,0.13);
-	margin: 0 auto 45px;
+	margin: 0 auto 25px;
 	border-radius: 3px;
 }
 
