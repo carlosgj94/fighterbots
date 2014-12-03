@@ -36,3 +36,11 @@ body{
 .title{
   margin-top:-70px;
 }
+
+
+@media (min-width: 768px) {
+  .main{
+    height: 100%;
+    max-height: 100%;
+  }
+}

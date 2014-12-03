@@ -701,7 +701,7 @@ form.signup button.btn {
 
 .team-member-container{
 	max-width: 400px;
-	display: inline-block;
+	display: block;
 	margin: 20px 0;
 }
 
