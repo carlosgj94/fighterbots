@@ -29,3 +29,6 @@ body{
 .row, .feature-box-container{
   padding-bottom: 40px;
 }
+#team{
+  background: rgba(56, 82, 99,0.6);
+}

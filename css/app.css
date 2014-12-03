@@ -706,7 +706,7 @@ form.signup button.btn {
 /* Team */
 
 .team-member-container{
-	max-width: 250px;
+	max-width: 400px;
 	display: inline-block;
 	margin: 20px 0;
 }
@@ -720,7 +720,7 @@ form.signup button.btn {
 }
 
 .team-member {
-	max-width: 220px;
+	max-width: 400px;
 	padding-bottom: 25px;
 	background: rgba(255,255,255,0.2);
 }
@@ -775,14 +775,15 @@ form.signup button.btn {
 	border: 1px solid #fff;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 	.owl-carousel .owl-item{
-		width: 220px !important;
-		margin: 0 15px;
+		width: 265px !important;
+		margin: 0 35px;
 	}
 	.carousel-container{
-		max-width: 1000px;
+		max-width: 1200px;
 		margin: 0 auto;
+    padding-left: 7.5%;
 	}
 }
 
