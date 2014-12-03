@@ -43,3 +43,9 @@ body{
     height: 120;
   }
 }
+
+@media (min-width: 500px) {
+  .title{
+    height: 90;
+  }
+}
