@@ -16,31 +16,31 @@ $(function () {
 	$.backstretch([
 		"img/background/1.jpg"
 	]);
-	
+
 	/* ---------------------------------------------------------
 	 * WOW
 	 */
-	
+
 	new WOW({
 		 mobile: false,
 	}).init();
-	
-	
+
+
 	/* ---------------------------------------------------------
 	 * Team carousel
 	 */
-	
+
 	$("#teamCarousel").owlCarousel({
 		items: 4,
 		itemsTablet: [768,3],
 		itemsTabletSmall: [690,2],
 		itemsMobile : [480,1]
 	});
-	
+
 	/* ---------------------------------------------------------
 	 * Scroll arrow
 	 */
-	
+
 	$("#scroll").click(function () {
 	 	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 	 		var target = $(this.hash);
@@ -59,15 +59,15 @@ $(function () {
 	 */
 
 	var description = {
-		weeks: "weeks",
-		days: "days",
-		hours: "hours",
-		minutes: "minutes",
-		seconds: "seconds"
+		weeks: "Semanas",
+		days: "Días",
+		hours: "Horas",
+		minutes: "Minutos",
+		seconds: "Segundos"
 	};
-	
+
 	// year/month/day
-	$('#countdown').countdown('2015/6/12', function (event) {
+	$('#countdown').countdown('2015/2/3', function (event) {
 		$(this).html(event.strftime(
 			'<div class="countdown-section"><b>%w</b> <span>' + description.weeks + '</span> </div>' +
 			'<div class="countdown-section"><b>%d</b> <span>' + description.days + '</span> </div>' +
@@ -78,47 +78,7 @@ $(function () {
 	});
 
 
-	/* ---------------------------------------------------------
-	 * Form validation
-	 */
 
-	/* Signup form */
-
-	$('#signupForm').bootstrapValidator({
-		message: 'This value is not valid',
-		feedbackIcons: {
-			valid: 'fa fa-check',
-			invalid: 'fa fa-times',
-			validating: 'fa fa-refresh'
-		},
-		submitHandler: function (validator, form, submitButton) {
-			var l = Ladda.create(submitButton[0]),
-				btnText = submitButton.children(".ladda-label");
-			
-			l.start();
-			btnText.html("Signing up...");
-			
-			$.get(form.attr('action'), form.serialize(), function(result) { 
-				btnText.html(result.message);							
-			}, 'json')
-			.always(function() { 
-				l.stop(); 
-				validator.disableSubmitButtons(true);
-			});
-		},
-		fields: {
-			email: {
-				validators: {
-					notEmpty: {
-						message: 'Email cannot be empty'
-					},
-					emailAddress: {
-						message: 'The input is not a valid email address'
-					}
-				}
-			}
-		}
-	});
 
 	/* Contact form */
 
@@ -166,10 +126,10 @@ $(function () {
 		submitHandler: function (validator, form, submitButton) {
 			var l = Ladda.create(submitButton[0]),
 				btnText = submitButton.children(".ladda-label");
-			
+
 			l.start();
 			btnText.html("Sending...");
-			
+
 			$.post(form.attr('action'), form.serialize(), function(result) {
 				if(result.sent){
 					btnText.html("Sent!");
@@ -177,17 +137,17 @@ $(function () {
 				else{
 					btnText.html("Error!");
 				}
-				
+
 				// Reset form after 5s
 				setTimeout(function() {
 					btnText.html("Submit");
 					$(form[0])[0].reset();
 					validator.resetForm();
 				}, 5000);
-				
+
 			}, 'json')
-			.always(function() { 
-				l.stop(); 
+			.always(function() {
+				l.stop();
 				validator.disableSubmitButtons(true);
 			});
 		},
