@@ -35,13 +35,5 @@ body{
 
 .title{
   margin-top:-70px;
-}
-
-
-
-
-@media (max-width: 768px) {
-  .title{
-    height: 90px;
-  }
+  weight:25% ;
 }
