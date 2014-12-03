@@ -35,5 +35,6 @@ body{
 
 .title{
   margin-top:-70px;
-  weight:25% ;
+  max-width:100%;
+  height:auto;
 }
