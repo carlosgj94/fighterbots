@@ -40,8 +40,8 @@ body{
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .title{
-    height: 90;
+    height: 90px;
   }
 }
