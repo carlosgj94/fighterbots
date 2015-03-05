@@ -67,7 +67,7 @@ $(function () {
 	};
 
 	// year/month/day
-	$('#countdown').countdown('2015/2/3', function (event) {
+	$('#countdown').countdown('2015/4/27', function (event) {
 		$(this).html(event.strftime(
 			'<div class="countdown-section"><b>%w</b> <span>' + description.weeks + '</span> </div>' +
 			'<div class="countdown-section"><b>%d</b> <span>' + description.days + '</span> </div>' +

@@ -1,17 +1,17 @@
 .main{
-  background-color: rgba(25,25,25,0.6);
+  background-color: rgba(25,25,25,0.9);
 }
 
 .page{
-  background-color: rgba(25,25,25,0.6);
+/*  background-color: rgba(76, 255, 0, 0.9);*/
 }
 
 #home{
-  background-color: rgba(25,25,25,0.6);
+  background-color: rgba(241, 196, 15,0.2);
 }
 
 body{
-  background: url("../img/alert.png");
+  background: url("../img/unnamed.png");
 }
 
 
@@ -30,7 +30,7 @@ body{
   padding-bottom: 40px;
 }
 #team{
-  background: rgba(56, 82, 99,0.6);
+  background: rgba(255, 216, 0, 0.5);
 }
 
 .title{
