@@ -25,6 +25,8 @@ body{
   -webkit-box-sizing: padding-box;
   -moz-box-sizing: padding-box;
   box-sizing: padding-box;
+  background: #f05758;
+  color: #ffffff;
 }
 .row, .feature-box-container{
   padding-bottom: 40px;
